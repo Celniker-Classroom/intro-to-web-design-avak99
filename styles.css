@@ -1,1 +1,44 @@
+body{
+    background-color:rgb(241, 212, 212);
+    color:rgb(92, 91, 91); 
+    margin: 10;
+    font-family:'Times New Roman', Times, serif
+}
+h1{
+    background-color: rgb(32, 32, 97);
+    color: rgb(239, 194, 79);
+    width:800px;
+    margin:0 auto; 
+    padding: 30 px;
+    border-left:5px double goldenrod;
+    border-right: 5px double goldenrod;
+    border-top: 5px double goldenrod;
+    border-bottom: 5px double goldenrod;
+    text-align: center
+}
+h2 {
+   background-color: rgb(245, 166, 166);
+   width: 800 px;
+   margin: 0 auto;
+   padding: 300 px;
+    border-bottom: 5px double rgb(32, 32, 97);
+   color: white;
+   font-size: 1.25em;
+   text-align: center;
+    color: rgb(32, 32, 97);
 
+}
+h3{
+    background-color: rgb(32, 32, 97);
+    color: white;
+    width: 300 px; 
+    margin: 0 auto;
+    padding: 10px;
+    border-left:solid 25px goldenrod;
+    border-right: solid 25px goldenrod;
+    text-align: center;
+}
+.pics{
+    width:500px;
+    border:3px black;
+}
