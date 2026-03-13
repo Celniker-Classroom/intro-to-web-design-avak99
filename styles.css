@@ -1,15 +1,15 @@
 body{
-    background-color:rgb(241, 212, 212);
+    background-color:rgb(226, 226, 240);
     color:rgb(92, 91, 91); 
     margin: 10;
-    font-family:'Times New Roman', Times, serif
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
 }
 h1{
     background-color: rgb(32, 32, 97);
     color: rgb(239, 194, 79);
     width:800px;
     margin:0 auto; 
-    padding: 30 px;
+    padding: 50 px;
     border-left:5px double goldenrod;
     border-right: 5px double goldenrod;
     border-top: 5px double goldenrod;
@@ -17,7 +17,7 @@ h1{
     text-align: center
 }
 h2 {
-   background-color: rgb(245, 166, 166);
+   background-color: rgb(64, 61, 104);
    width: 800 px;
    margin: 0 auto;
    padding: 300 px;
@@ -41,4 +41,16 @@ h3{
 .pics{
     width:500px;
     border:3px black;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+#sidebar{
+    background-color: aliceblue;
+    border: 3px solid white;
+    padding: 12px;
+    width: 235 px; 
+    border-radius: 20px;
+    float: right;
+    margin: 30px 30px 0 12px;
 }
