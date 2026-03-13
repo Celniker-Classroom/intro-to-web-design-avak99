@@ -14,7 +14,8 @@ h1{
     border-right: 5px double goldenrod;
     border-top: 5px double goldenrod;
     border-bottom: 5px double goldenrod;
-    text-align: center
+    text-align: center;
+    margin-bottom: 30px;
 }
 h2 {
    background-color: rgb(64, 61, 104);
@@ -26,6 +27,7 @@ h2 {
    font-size: 1.25em;
    text-align: center;
     color: rgb(32, 32, 97);
+    margin-bottom: 30px;
 
 }
 h3{
