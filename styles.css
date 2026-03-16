@@ -64,12 +64,13 @@ a:link{
     color: white;
     text-shadow: 0.5px 0.5px 0px red;
 }
-a:hover{
-    border-color:burlywood;
-}
+
 a:visted{
     color:blanchedalmond;
     text-decoration: none;
+}
+a:hover{
+    border-color:burlywood;
 }
 a:active{
     border-color: yellow;
