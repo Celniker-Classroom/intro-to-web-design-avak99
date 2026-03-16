@@ -73,7 +73,7 @@ a:visted{
     text-decoration: none;
 }
 a:hover{
-    border-color:burlywood;
+    border-color:burlywood !important;
     text-decoration: underline;
 }
 a:active{
