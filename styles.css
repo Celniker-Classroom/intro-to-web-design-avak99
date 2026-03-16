@@ -63,6 +63,7 @@ a:link{
     font-weight: bold;
     color: white;
     text-shadow: 0.5px 0.5px 0px red;
+    text-decoration: none;
 }
 
 a:visted{
@@ -71,6 +72,7 @@ a:visted{
 }
 a:hover{
     border-color:burlywood;
+    text-decoration: underline;
 }
 a:active{
     border-color: yellow;
