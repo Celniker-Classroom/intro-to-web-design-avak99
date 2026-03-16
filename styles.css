@@ -72,10 +72,12 @@ a:visted{
     text-decoration: none;
 }
 a:hover{
+    border-style: solid;
     border-color:burlywood !important;
     text-decoration: underline;
 }
 a:active{
+    border-style: solid;
     border-color: yellow;
 }
 
