@@ -1,111 +1,133 @@
+/* ---------- GENERAL ---------- */
+
 body{
-    background-color:rgb(226, 226, 240);
-    color:rgb(92, 91, 91); 
-    margin: 10;
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+    background-color:#e9e8f6;
+    color:#444;
+    margin:0;
+    font-family: Cambria, Georgia, 'Times New Roman', serif;
 }
+
+/* ---------- MAIN CONTAINER ---------- */
+
+#container{
+    background:white;
+    width:1000px;
+    max-width:90%;
+    margin:40px auto;
+    padding:40px;
+    border-radius:12px;
+    box-shadow:0px 8px 25px rgba(0,0,0,0.15);
+}
+
+/* ---------- HEADER ---------- */
+
 h1{
-    background-color: rgb(32, 32, 97);
-    color: rgb(239, 194, 79);
-    width:800px;
-    margin:0 auto; 
-    padding: 50 px;
-    border-left:5px double goldenrod;
-    border-right: 5px double goldenrod;
-    border-top: 5px double goldenrod;
-    border-bottom: 5px double goldenrod;
-    text-align: center;
-    margin-bottom: 30px;
+    background:#1f2a68;
+    color:#f3c969;
+    text-align:center;
+    padding:25px;
+    border:4px double #f3c969;
+    border-radius:8px;
+    margin-bottom:25px;
 }
-h2 {
-   background-color: rgb(64, 61, 104);
-   width: 800 px;
-   margin: 0 auto;
-   padding: 300 px;
-    border-bottom: 5px double rgb(32, 32, 97);
-   color: white;
-   font-size: 1.25em;
-   text-align: center;
-    color: rgb(32, 32, 97);
-    margin-bottom: 30px;
 
+/* Quote section */
+
+h2{
+    background:#f6d6e6;
+    color:#1f2a68;
+    text-align:center;
+    padding:15px;
+    border-left:8px solid #f3c969;
+    border-right:8px solid #f3c969;
+    border-radius:6px;
+    font-size:1.1em;
 }
+
+/* Section headers */
+
 h3{
-    background-color: rgb(32, 32, 97);
-    color: white;
-    width: 300 px; 
-    margin: 0 auto;
-    padding: 10px;
-    border-left:solid 25px goldenrod;
-    border-right: solid 25px goldenrod;
-    text-align: center;
+    background:#1f2a68;
+    color:white;
+    text-align:center;
+    padding:12px;
+    margin-top:40px;
+    border-left:18px solid #f3c969;
+    border-right:18px solid #f3c969;
+    border-radius:6px;
 }
-.pics{
-    width:300px;
 
-    border:3px black;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+/* ---------- TEXT + IMAGE LAYOUT ---------- */
+
+.section{
+    display:flex;
+    align-items:center;
+    gap:30px;
+    margin-top:20px;
 }
+
+.section img{
+    width:260px;
+    border-radius:10px;
+}
+
+/* ---------- CIRCULAR NYC IMAGE ---------- */
+
+.circle-img{
+    width:260px;
+    height:260px;
+    object-fit:cover;
+    border-radius:50%;
+    border:5px solid #f3c969;
+}
+
+/* ---------- SIDEBAR ---------- */
+
 #sidebar{
-    background-color: aliceblue;
-    border: 3px solid white;
-    padding: 12px;
-    font-size: small;
-    line-height: normal;
-    width: 10%; 
-    border-radius: 20px;
-    float: right;
-    margin: 30px 30px 0 12px;
+    background:#f6d6e6;
+    border:3px solid #1f2a68;
+    padding:15px;
+    width:200px;
+    border-radius:12px;
+    position:absolute;
+    right:60px;
+    top:120px;
+    font-size:0.9em;
 }
-/* Unvisited links */
+
+/* ---------- IMAGES ---------- */
+
+.pics{
+    width:260px;
+}
+
+/* ---------- LINKS ---------- */
+
 a:link{
-    font-weight: bold;
-    color: white;
-    text-shadow: 0.5px 0.5px 0px red;
-    text-decoration: none;
+    color:#1f2a68;
+    font-weight:bold;
+    text-decoration:none;
 }
 
 a:visited{
-    color:blanchedalmond;
-    text-decoration: none;
+    color:#b85c8e;
 }
+
 a:hover{
-    border-style: solid;
-    border-color:burlywood !important;
-    text-decoration: underline;
-}
-a:active{
-    border-style: solid;
-    border-color: yellow;
+    text-decoration:underline;
 }
 
-#container{
-    background-color: gray;
-    margin: 50 auto; 
-    width: 800px;
-    max-width: 1200px;
-    border-left: 3px double white;
-    border-right: 3 px double white; 
-    padding: 30px
+/* ---------- RESPONSIVE DESIGN ---------- */
+
+@media (max-width:900px){
+
+.section{
+    flex-direction:column;
+    text-align:center;
 }
 
-@media (max-width: 1200px){
-#container {
-    max-width: 80%;
-    width:95%;
-}
-}
-@media (max-width: 800px){
-#container {
-    max-width: 70%;
-    width: 90%;
-}
-}
-@media (max-width: 400px){
-#container {
-    max-width: 60%;
-    width: 85%;
+#sidebar{
+    position:static;
+    margin:20px auto;
 }
 }
