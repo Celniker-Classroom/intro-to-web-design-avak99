@@ -174,7 +174,9 @@ a:active { color:#ff7f50; }
     margin:20px auto;
   }
 }
-
+body{
+  max-width: 1000px;
+}
 /* Autograder extra breakpoints */
 
 /* Container width adjustment for medium screens */
