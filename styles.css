@@ -1,127 +1,180 @@
 /* ---------- GOOGLE FONT ---------- */
-
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Libre+Baskerville&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Open+Sans:wght@400;600&display=swap');
 
 /* ---------- GENERAL ---------- */
+html, body{
+    margin:0;
+    padding:0;
+    overflow-x:hidden; /* prevents horizontal scrolling */
+}
 
 body{
-    background:#eceafb;
+    background: linear-gradient(-45deg,#eceafb,#f7d7e8,#eceafb,#fdf0ff);
+    background-size:400% 400%;
+    animation: gradientBG 15s ease infinite, fadeIn 1.2s ease;
     color:#444;
-    margin:0;
-    font-family:'Libre Baskerville', serif;
-    line-height:1.6;
+    font-family:'Open Sans', sans-serif; /* sans-serif paragraphs */
+    line-height:1.7; /* readability */
+}
+
+/* ---------- PAGE ANIMATIONS ---------- */
+@keyframes fadeIn{
+    from{opacity:0;}
+    to{opacity:1;}
+}
+
+@keyframes gradientBG{
+    0%{background-position:0% 50%;}
+    50%{background-position:100% 50%;}
+    100%{background-position:0% 50%;}
 }
 
 /* ---------- CONTAINER ---------- */
-
 #container{
     background:white;
-    width:1050px;
-    max-width:90%;
-    margin:50px auto;
-    padding:40px;
+    width:1100px; /* fixed large screen */
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:40px;
+    margin-bottom:40px;
+    padding:3%;
     border-radius:12px;
-    box-shadow:0 10px 25px rgba(0,0,0,0.15);
+    box-shadow:0 10px 25px rgba(0,0,0,0.15); /* card effect */
 }
 
 /* ---------- HEADER ---------- */
-
 h1{
     font-family:'Playfair Display', serif;
-    background:#3f3b8a;   /* purply blue */
+    background:#3f3b8a;
     color:#f4c86a;
     text-align:center;
-    padding:25px;
+    padding:2%;
     border:4px double #f4c86a;
     border-radius:8px;
     letter-spacing:1px;
+    text-shadow:0 0 8px rgba(244,200,106,0.7); /* header glow */
+    transition: transform 0.3s;
+}
+
+h1:hover{
+    transform: scale(1.03);
 }
 
 /* ---------- QUOTE ---------- */
-
 h2{
     background:#f7d7e8;
     color:#3f3b8a;
     text-align:center;
-    padding:15px;
+    padding:1.5%;
     border-left:10px solid #f4c86a;
     border-right:10px solid #f4c86a;
     border-radius:6px;
     font-size:1.1em;
-    margin-top:25px;
+    margin-top:2%;
+}
+
+/* ---------- HIGHLIGHT CLASS ---------- */
+.highlight{
+    background:#fff3a6;
+    padding:3px 6px;
+    border-radius:4px;
+    font-weight:bold;
 }
 
 /* ---------- SECTION HEADERS ---------- */
-
 h3{
     font-family:'Playfair Display', serif;
     background:#3f3b8a;
     color:white;
     text-align:center;
-    padding:12px;
-    margin-top:45px;
+    padding:1%;
+    margin-top:4%;
     border-left:18px solid #f4c86a;
     border-right:18px solid #f4c86a;
     border-radius:6px;
+    transition: transform 0.3s;
 }
 
-/* ---------- IMAGE WRAPPING ---------- */
+h3:hover{
+    transform: scale(1.03); /* hover effect on headers */
+}
 
+/* ---------- IMAGE STYLING (PERCENTAGE BASED) ---------- */
 .left-img{
     float:left;
-    width:260px;
-    margin:15px 25px 15px 0;
+    width:25%;
+    max-width:260px;
+    height:auto;
+    margin:1.5% 3% 1.5% 0;
     border-radius:10px;
+    background:white; /* ensures PNG/GIF look correct */
+    padding:4px;
+    transition: transform 0.35s ease, box-shadow 0.35s ease;
 }
 
 .right-img{
     float:right;
-    width:260px;
-    margin:15px 0 15px 25px;
+    width:25%;
+    max-width:260px;
+    height:auto;
+    margin:1.5% 0 1.5% 3%;
     border-radius:10px;
+    background:white;
+    padding:4px;
+    transition: transform 0.35s ease, box-shadow 0.35s ease;
 }
 
-/* ---------- CIRCULAR IMAGE (Times Square) ---------- */
-
+/* Times Square circular image */
 .circle-img{
     float:right;
-    width:260px;
-    height:260px;
+    width:25%;
+    max-width:260px;
+    aspect-ratio:1/1;
     object-fit:cover;
     border-radius:50%;
-    margin:15px 0 15px 25px;
+    margin:1.5% 0 1.5% 3%;
     border:5px solid #f4c86a;
+    background:white;
+    padding:4px;
+    transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+/* ---------- IMAGE HOVER EFFECT ---------- */
+img:hover{
+    transform: scale(1.07) rotate(1deg);
+    box-shadow:0 10px 25px rgba(0,0,0,0.25);
 }
 
 /* ---------- CLEAR FLOAT ---------- */
-
 .clear{
     clear:both;
 }
 
-/* ---------- SIDEBAR ---------- */
-
+/* ---------- SIDEBAR (SECOND FLOATING DIV) ---------- */
 #sidebar{
+    float:right;
+    width:20%;
+    min-width:180px;
     background:#f7d7e8;
     border:3px solid #3f3b8a;
-    padding:18px;
-    width:200px;
+    padding:2%;
     border-radius:15px;
-    position:absolute;
-    right:70px;
-    top:140px;
+    margin-left:3%;
     font-size:0.9em;
     box-shadow:0 6px 15px rgba(0,0,0,0.15);
+    transition: transform 0.3s;
+}
+
+#sidebar:hover{
+    transform: translateY(-5px); /* floating lift effect */
 }
 
 /* ---------- LINKS ---------- */
-
 a{
     color:#3f3b8a;
     font-weight:bold;
     text-decoration:none;
-    transition:0.3s;
+    transition: color 0.3s;
 }
 
 a:hover{
@@ -129,31 +182,46 @@ a:hover{
     text-decoration:underline;
 }
 
-/* ---------- IMAGE HOVER EFFECT ---------- */
-
-img{
-    transition: transform 0.35s ease, box-shadow 0.35s ease;
+a:visited{
+    color:#ff4fa3;
 }
 
-img:hover{
-    transform:scale(1.05);
-    box-shadow:0 8px 20px rgba(0,0,0,0.2);
+/* ---------- MEDIUM SCREENS ---------- */
+@media (max-width:1100px){
+    #container{
+        width:95%; /* flexible container */
+    }
 }
 
-/* ---------- MOBILE ---------- */
-
-@media (max-width:900px){
-
-#sidebar{
-    position:static;
-    margin:20px auto;
-    width:80%;
+/* ---------- TABLETS ---------- */
+@media (max-width:800px){
+    #sidebar{
+        float:none; /* sidebar stacks */
+        width:90%;
+        margin:20px auto;
+    }
+    .left-img,
+    .right-img,
+    .circle-img{
+        float:none;
+        width:60%;
+        max-width:300px;
+        display:block;
+        margin:20px auto;
+    }
 }
 
-.left-img,
-.right-img,
-.circle-img{
-    float:none;
-    display:block;
-    margin:20px auto;
+/* ---------- MOBILE PHONES ---------- */
+@media (max-width:500px){
+    #container{
+        width:95%;
+        padding:5%;
+    }
+    h1{
+        font-size:1.6em;
+    }
+    h3{
+        border-left:10px solid #f4c86a;
+        border-right:10px solid #f4c86a;
+    }
 }
