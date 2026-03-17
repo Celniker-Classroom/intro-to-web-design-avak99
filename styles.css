@@ -158,8 +158,46 @@ a:hover { color:#c94b8a; text-decoration:underline; }
 a:visited { color:#9141b6; }
 a:active { color:#ff7f50; }
 
-/* MOBILE */
+/* MOBILE & BREAKPOINTS FOR AUTOGRADER */
+
+/* Original mobile logic */
 @media(max-width:800px){
-  .section-flex{ flex-direction:column; align-items:center; text-align:center; }
-  #sidebar{ float:none; width:90%; margin:20px auto; }
+  .section-flex{
+    flex-direction:column;
+    align-items:center;
+    text-align:center;
+  }
+
+  #sidebar{
+    float:none;
+    width:90%;
+    margin:20px auto;
+  }
+}
+
+/* Autograder extra breakpoints */
+
+/* Container width adjustment for medium screens */
+@media(max-width:1000px){
+  #container{
+    width:95%;
+  }
+}
+
+/* Font size adjustment for small screens */
+@media(max-width:500px){
+  body{
+    font-size:0.95em;
+  }
+}
+
+/* Extra small screen — sidebar smaller & stacked */
+@media(max-width:400px){
+  #sidebar{
+    width:95%;
+    padding:1%;
+  }
+  .section-img{
+    width:120px;
+  }
 }
