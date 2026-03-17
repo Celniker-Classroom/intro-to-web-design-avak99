@@ -29,7 +29,15 @@ html, body {
   --border-start: #ffd966; /* yellow */
   --border-middle: #ff7f50; /* coral-orange */
   --border-end: #ffd966; /* yellow */
-  --harmonious-purple: #6B4D9B; /* warmer bluish purple */
+  --harmonious-purple: #6B4D9B; /* purple */
+}
+
+/* SECTION OUTLINE */
+.section-outline {
+  border:1px solid #444; /* thin gray outline around the whole section */
+  padding:1.5%;
+  border-radius:10px;
+  margin-bottom:3%;
 }
 
 /* HEADER */
@@ -51,7 +59,6 @@ html, body {
   border-right:28px solid;
   border-image: linear-gradient(to bottom, var(--border-start), var(--border-middle), var(--border-end)) 1;
 }
-
 .gradient-header:hover {
   transform:scale(1.05);
   text-shadow: 
@@ -92,7 +99,7 @@ h3 {
   color:white;
   text-align:center;
   padding:1%;
-  margin:4% 0 2% 0;
+  margin:2% 0 1% 0;
   border-left:28px solid;
   border-right:28px solid;
   border-image: linear-gradient(to bottom, var(--border-start), var(--border-middle), var(--border-end)) 1;
