@@ -208,14 +208,3 @@ body{
 
   }
 }
-
-  @media(max-width: 1700px){
-    .sbtitle{
-      display:none;
-    }
-  }
-  @media (max-width: 1700px) {
-    .sbsection{
-      display: none;
-    }
-  }
