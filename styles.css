@@ -199,6 +199,10 @@ a:active { color:#ff7f50; }
     padding:1%;
   }
   .section-img{
-    width:120px;
+    width:10%;
+    max-width: 100px;
+  
+
+
   }
 }
