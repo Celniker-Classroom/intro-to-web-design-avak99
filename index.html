@@ -38,7 +38,7 @@
       <a href="https://en.wikipedia.org/wiki/New_York_City" target="_blank">New York City</a> 
       which is her favorite place to visit in the country. Ava also enjoys traveling to Northern California (specifically San Francisco) where her grandma lives. She is excited about her upcoming trip to Orlando to attend Disney Dreamers Academy, which is an all-expenses paid trip to a major mentorship program for 100 students throughout the United States. There, she looks forward to meeting some of the leaders of Disney including the animator for Lilo and Stitch.
     </p>
-    <img src="images/nyc.jpg" class="pics circle">
+    <img src="images/nyc.jpg" class="pics circle parallax">
 
     <h3>Books</h3>
     <p>
@@ -51,6 +51,14 @@
     <div class="clear"></div>
   </div>
 
+  <script>
+    // Parallax effect for Times Square image
+    const parallaxImg = document.querySelector('.parallax');
+    window.addEventListener('scroll', () => {
+      const offset = window.scrollY;
+      parallaxImg.style.transform = `translateY(${offset * 0.2}px)`;
+    });
+  </script>
+
 </body>
 </html>
-
