@@ -1,133 +1,159 @@
+/* ---------- GOOGLE FONT ---------- */
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Libre+Baskerville&display=swap');
+
+
 /* ---------- GENERAL ---------- */
 
 body{
-    background-color:#e9e8f6;
+    background:#eceafb;
     color:#444;
     margin:0;
-    font-family: Cambria, Georgia, 'Times New Roman', serif;
+    font-family:'Libre Baskerville', serif;
+    line-height:1.6;
 }
 
-/* ---------- MAIN CONTAINER ---------- */
+/* ---------- CONTAINER ---------- */
 
 #container{
     background:white;
-    width:1000px;
+    width:1050px;
     max-width:90%;
-    margin:40px auto;
+    margin:50px auto;
     padding:40px;
     border-radius:12px;
-    box-shadow:0px 8px 25px rgba(0,0,0,0.15);
+    box-shadow:0 10px 25px rgba(0,0,0,0.15);
 }
 
 /* ---------- HEADER ---------- */
 
 h1{
-    background:#1f2a68;
-    color:#f3c969;
+    font-family:'Playfair Display', serif;
+    background:#3f3b8a;   /* purply blue */
+    color:#f4c86a;
     text-align:center;
     padding:25px;
-    border:4px double #f3c969;
+    border:4px double #f4c86a;
     border-radius:8px;
-    margin-bottom:25px;
+    letter-spacing:1px;
 }
 
-/* Quote section */
+/* ---------- QUOTE ---------- */
 
 h2{
-    background:#f6d6e6;
-    color:#1f2a68;
+    background:#f7d7e8;
+    color:#3f3b8a;
     text-align:center;
     padding:15px;
-    border-left:8px solid #f3c969;
-    border-right:8px solid #f3c969;
+    border-left:10px solid #f4c86a;
+    border-right:10px solid #f4c86a;
     border-radius:6px;
     font-size:1.1em;
+    margin-top:25px;
 }
 
-/* Section headers */
+/* ---------- SECTION HEADERS ---------- */
 
 h3{
-    background:#1f2a68;
+    font-family:'Playfair Display', serif;
+    background:#3f3b8a;
     color:white;
     text-align:center;
     padding:12px;
-    margin-top:40px;
-    border-left:18px solid #f3c969;
-    border-right:18px solid #f3c969;
+    margin-top:45px;
+    border-left:18px solid #f4c86a;
+    border-right:18px solid #f4c86a;
     border-radius:6px;
 }
 
-/* ---------- TEXT + IMAGE LAYOUT ---------- */
+/* ---------- IMAGE WRAPPING ---------- */
 
-.section{
-    display:flex;
-    align-items:center;
-    gap:30px;
-    margin-top:20px;
-}
-
-.section img{
+.left-img{
+    float:left;
     width:260px;
+    margin:15px 25px 15px 0;
     border-radius:10px;
 }
 
-/* ---------- CIRCULAR NYC IMAGE ---------- */
+.right-img{
+    float:right;
+    width:260px;
+    margin:15px 0 15px 25px;
+    border-radius:10px;
+}
+
+/* ---------- CIRCULAR IMAGE (Times Square) ---------- */
 
 .circle-img{
+    float:right;
     width:260px;
     height:260px;
     object-fit:cover;
     border-radius:50%;
-    border:5px solid #f3c969;
+    margin:15px 0 15px 25px;
+    border:5px solid #f4c86a;
+}
+
+/* ---------- CLEAR FLOAT ---------- */
+
+.clear{
+    clear:both;
 }
 
 /* ---------- SIDEBAR ---------- */
 
 #sidebar{
-    background:#f6d6e6;
-    border:3px solid #1f2a68;
-    padding:15px;
+    background:#f7d7e8;
+    border:3px solid #3f3b8a;
+    padding:18px;
     width:200px;
-    border-radius:12px;
+    border-radius:15px;
     position:absolute;
-    right:60px;
-    top:120px;
+    right:70px;
+    top:140px;
     font-size:0.9em;
-}
-
-/* ---------- IMAGES ---------- */
-
-.pics{
-    width:260px;
+    box-shadow:0 6px 15px rgba(0,0,0,0.15);
 }
 
 /* ---------- LINKS ---------- */
 
-a:link{
-    color:#1f2a68;
+a{
+    color:#3f3b8a;
     font-weight:bold;
     text-decoration:none;
-}
-
-a:visited{
-    color:#b85c8e;
+    transition:0.3s;
 }
 
 a:hover{
+    color:#c94b8a;
     text-decoration:underline;
 }
 
-/* ---------- RESPONSIVE DESIGN ---------- */
+/* ---------- IMAGE HOVER EFFECT ---------- */
+
+img{
+    transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+img:hover{
+    transform:scale(1.05);
+    box-shadow:0 8px 20px rgba(0,0,0,0.2);
+}
+
+/* ---------- MOBILE ---------- */
 
 @media (max-width:900px){
-
-.section{
-    flex-direction:column;
-    text-align:center;
-}
 
 #sidebar{
     position:static;
     margin:20px auto;
+    width:80%;
 }
+
+.left-img,
+.right-img,
+.circle-img{
+    float:none;
+    display:block;
+    margin:20px auto;
 }
