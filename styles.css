@@ -90,10 +90,11 @@ h3:hover { transform:scale(1.03); background: linear-gradient(90deg, #5a52b0, #3
 /* IMAGES */
 .pics {
   width:250px; height:250px; object-fit:cover;
-  border-radius:12px; border:5px solid #f4c86a;
+  border-radius:12px;
+  border:6px double #f4c86a;
   background:white; padding:4px; margin:1.5% 2%;
   float:left; shape-outside:circle(50%); shape-margin:10px;
-  transition: transform 0.35s ease, box-shadow 0.35s ease;
+  transition: transform 0.35s ease, box-shadow 0.35s ease, filter 0.3s;
   animation:slideUp 1s ease;
 }
 .pics.circle {
@@ -110,6 +111,7 @@ h3:hover { transform:scale(1.03); background: linear-gradient(90deg, #5a52b0, #3
 
 /* SIDEBAR */
 #sidebar {
+  position:sticky; top:120px; /* sticky scroll */
   float:right; width:200px;
   background:linear-gradient(135deg,#f7d7e8,#ede0ff);
   border:3px solid #3f3b8a; padding:2%; border-radius:12px;
