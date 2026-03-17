@@ -181,6 +181,7 @@ a:active { color:#ff7f50; }
 @media(max-width:1000px){
   #container{
     width:95%;
+  MIN-WIDTH: 1201PX
   }
 }
 
