@@ -73,20 +73,25 @@ html, body {
  filter: brightness(1.05);
 }
 
-
 /* HEADER */
 .gradient-header {
  font-family:'Playfair Display', serif;
  background: linear-gradient(to bottom, var(--harmonious-purple), #9a6fd6);
  color:white;
- text-align:center;
- padding:1.5%;
+padding: 20px 0;
  border-radius:8px;
  letter-spacing:1px;
  text-shadow: 1px 1px 0 #444, -1px -1px 0 #444, 1px -1px 0 #444, -1px 1px 0 #444;
  border-left:28px solid;
  border-right:28px solid;
  border-image: linear-gradient(to bottom, var(--border-start), var(--border-middle), var(--border-end)) 1;
+
+
+ width: 100%;
+ max-width: 1100px;
+ margin: 0 auto;
+ text-align: center;
+ box-sizing: border-box;
 }
 
 
@@ -225,3 +230,7 @@ a:active { color:#ff7f50; }
   margin-bottom:15px;
   text-align:left;
 }
+#pic1 { float:left; margin-right:15px; }
+#pic2 { float:left; margin-right:15px; }
+#pic3 { float:left; margin-right:15px; }
+
